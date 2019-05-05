@@ -8,3 +8,6 @@
     <a href="https://github.com/atsushi130/studio-ios.git"><img src="https://img.shields.io/badge/Swift-studio-ios-3B5998.svg"></a> 
     <img src="https://img.shields.io/badge/Swift-5-ffac45.svg">
 </p>
+
+## License
+studio-ios is available under the MIT license. See the [LICENSE file](https://github.com/atsushi130/studio-ios/blob/master/license).
