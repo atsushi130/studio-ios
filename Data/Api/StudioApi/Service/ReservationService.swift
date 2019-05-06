@@ -21,6 +21,7 @@ extension StudioApi {
         enum Endpoint: StudioApiEndpoint {
             case fetchReservations(month: Int, day: Int)
             case reserve(studioReservation: StudioReservation)
+            case cancel(studioReservation: StudioReservation)
         }
     }
     public static let reservationService = ReservationService()
@@ -35,6 +36,8 @@ extension StudioApi.ReservationService.Endpoint {
             return URL(string: base + "?view=week&day=\(day)&month=\(month)")!
         case let .reserve(studioReservation):
             return URL(string: base + "?view=week&day=\(studioReservation.day)&month=\(studioReservation.month)")!
+        case let .cancel(studioReservation):
+            return URL(string: base + "?view=week&day=\(studioReservation.day)&month=\(studioReservation.month)")!
         }
     }
     
@@ -47,6 +50,8 @@ extension StudioApi.ReservationService.Endpoint {
             return .get
         case .reserve:
             return .post
+        case .cancel:
+            return .post
         }
     }
     
@@ -58,7 +63,16 @@ extension StudioApi.ReservationService.Endpoint {
             let parameters: [String: Any] = [
                 "reservation[start_time]": studioReservation.start,
                 "reservation[finish_time]": studioReservation.end,
-                "reservation[resource_id]": studioReservation.studioType.rawValue,
+                "reservation[resource_id]": studioReservation.studioType.rawValue
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .cancel(studioReservation):
+            let parameters: [String: Any] = [
+                "oldres[start_time]": studioReservation.start,
+                "oldres[finish_time]": studioReservation.end,
+                "oldres[resource_id]": studioReservation.studioType.rawValue,
+                "oldres[id]": studioReservation.orderId!,
+                "destroy": ""
             ]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
@@ -107,5 +121,23 @@ extension StudioApi.ReservationService {
                 }
                 return .just(())
             }
+    }
+    
+    public func cancel(studioReservation: StudioReservation) -> Observable<Void> {
+        return self.provider.rx.request(.cancel(studioReservation: studioReservation))
+            .asObservable()
+            .flatMap { response -> Observable<Void> in
+                switch response.statusCode {
+                case 200..<300:
+                    print("success")
+                case 300..<400:
+                    print("redirection")
+                case 400..<600:
+                    print("error")
+                default:
+                    print("default")
+                }
+                return .just(())
+        }
     }
 }
