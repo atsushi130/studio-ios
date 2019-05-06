@@ -10,7 +10,6 @@ import Moya
 import RxMoya
 import RxSwift
 import Model
-import Shared
 
 extension StudioApi {
     
@@ -64,7 +63,7 @@ extension StudioApi.LoginService {
             .flatMap { response -> Observable<Void> in
                 switch response.statusCode {
                 case 200..<300:
-                    CookieStore.shared.store(httpUrlResponse: response.response!)
+                    StudioApi.CookieStore.shared.store(httpUrlResponse: response.response!)
                 case 300..<400:
                     print("redirection")
                 case 400..<600:
