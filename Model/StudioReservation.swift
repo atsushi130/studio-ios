@@ -106,6 +106,5 @@ public final class StudioReservationFactory {
                 let studioType = StudioReservation.StudioType(rawValue: Int(info[2])!)!
                 return StudioReservation(startDate: date, studioType: studioType, name: info[8], owner: info[7] == "true", orderId: Int(info[3])!)!
             }
-            //.filter { $0 != nil }
     }
 }
