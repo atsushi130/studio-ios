@@ -9,6 +9,7 @@
 import Moya
 import RxMoya
 import RxSwift
+import RxCocoa
 import Model
 
 extension StudioApi {
