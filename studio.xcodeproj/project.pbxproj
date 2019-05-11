@@ -48,6 +48,9 @@
 		0D7823B1227ECBC400EAE20F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A1227ECBB600EAE20F /* RxMoya.framework */; };
 		0D7823B2227ECBC400EAE20F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0D7823B5227EDF9A00EAE20F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7823B4227EDF9A00EAE20F /* LoginService.swift */; };
+		0D8DAC762286CEE50032BD17 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
+		0D8DAC772286CEE50032BD17 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC742286CEE50032BD17 /* RxRelay.framework */; };
+		0D8DAC782286CEE50032BD17 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -187,6 +190,9 @@
 		0D7823A2227ECBB600EAE20F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		0D7823A3227ECBB600EAE20F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		0D7823B4227EDF9A00EAE20F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		0D8DAC732286CEE50032BD17 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		0D8DAC742286CEE50032BD17 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		0D8DAC752286CEE50032BD17 /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,8 +206,11 @@
 				0D7823A4227ECBB600EAE20F /* RxAtomic.framework in Frameworks */,
 				0D7823A7227ECBB600EAE20F /* RxSwift.framework in Frameworks */,
 				0D7823A5227ECBB600EAE20F /* SwiftExtensions.framework in Frameworks */,
+				0D8DAC762286CEE50032BD17 /* RxDataSources.framework in Frameworks */,
+				0D8DAC782286CEE50032BD17 /* Differentiator.framework in Frameworks */,
 				0D7823A9227ECBB600EAE20F /* RxMoya.framework in Frameworks */,
 				0D782387227EC54300EAE20F /* Shared.framework in Frameworks */,
+				0D8DAC772286CEE50032BD17 /* RxRelay.framework in Frameworks */,
 				0D7823A6227ECBB600EAE20F /* Moya.framework in Frameworks */,
 				0D7823AA227ECBB600EAE20F /* RxCocoa.framework in Frameworks */,
 				0D782340227EC4F300EAE20F /* Data.framework in Frameworks */,
@@ -368,6 +377,9 @@
 		0D78236B227EC53900EAE20F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D8DAC752286CEE50032BD17 /* Differentiator.framework */,
+				0D8DAC732286CEE50032BD17 /* RxDataSources.framework */,
+				0D8DAC742286CEE50032BD17 /* RxRelay.framework */,
 				0D78239E227ECBB600EAE20F /* Moya.framework */,
 				0D7823A3227ECBB600EAE20F /* Result.framework */,
 				0D78239C227ECBB600EAE20F /* RxAtomic.framework */,
