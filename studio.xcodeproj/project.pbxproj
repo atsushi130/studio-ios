@@ -75,6 +75,7 @@
 		0D8DACD52286FAED0032BD17 /* StudioTimeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACD42286FAED0032BD17 /* StudioTimeTableViewModel.swift */; };
 		0D8DACDA2286FBE70032BD17 /* Inputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACD92286FBE70032BD17 /* Inputable.swift */; };
 		0D8DACDC2286FC210032BD17 /* Outputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDB2286FC210032BD17 /* Outputable.swift */; };
+		0D8DACDE2286FC4A0032BD17 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDD2286FC4A0032BD17 /* Connectable.swift */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -282,6 +283,7 @@
 		0D8DACD42286FAED0032BD17 /* StudioTimeTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableViewModel.swift; sourceTree = "<group>"; };
 		0D8DACD92286FBE70032BD17 /* Inputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputable.swift; sourceTree = "<group>"; };
 		0D8DACDB2286FC210032BD17 /* Outputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outputable.swift; sourceTree = "<group>"; };
+		0D8DACDD2286FC4A0032BD17 /* Connectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -646,6 +648,7 @@
 			children = (
 				0D8DACD92286FBE70032BD17 /* Inputable.swift */,
 				0D8DACDB2286FC210032BD17 /* Outputable.swift */,
+				0D8DACDD2286FC4A0032BD17 /* Connectable.swift */,
 			);
 			path = Connectable;
 			sourceTree = "<group>";
@@ -1226,6 +1229,7 @@
 				0D8DACDC2286FC210032BD17 /* Outputable.swift in Sources */,
 				0D8DACCE2286F7C10032BD17 /* RoutableViewController+Configurator.swift in Sources */,
 				0D8DACDA2286FBE70032BD17 /* Inputable.swift in Sources */,
+				0D8DACDE2286FC4A0032BD17 /* Connectable.swift in Sources */,
 				0D8DACD02286F7F70032BD17 /* ViewModelInjectable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
