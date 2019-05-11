@@ -13,6 +13,7 @@ import RxDataSources
 import SwiftExtensions
 import Model
 import Extension
+import ViewComponent
 
 extension StudioTimeTableViewController: RoutableViewController {
     typealias ViewControllerConfigurator = StudioTimeTableConfigurator
@@ -21,18 +22,22 @@ extension StudioTimeTableViewController: RoutableViewController {
 
 final class StudioTimeTableViewController: UIViewController, ViewModelInjectable {
  
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            self.collectionView.register(cellType: StudioTimeTableCell.self)
+        }
+    }
     
     private typealias DataSource = RxCollectionViewSectionedReloadDataSource<StudioTimeTableSectionModel>
     private lazy var dataSource = DataSource(configureCell: { [weak self] (dataSource, tableView, indexPath, _) in
+        guard let `self` = self else { return UICollectionViewCell() }
         let item = dataSource[indexPath]
         switch item {
         case let .item(studioSchedule):
-            print("----------")
-            print("start: \(studioSchedule.startDate)")
             let availables = studioSchedule.availables
-            print("A: \(availables.studioA) B: \(availables.studioA) C: \(availables.studioA)")
-            return UICollectionViewCell()
+            let cell = self.collectionView.dequeueReusableCell(with: StudioTimeTableCell.self, for: indexPath)
+            cell.startTimeLabel.text = "\(studioSchedule.startDate)"
+            return cell
         }
     })
     
