@@ -594,10 +594,10 @@
 		0D8DACA12286D2AC0032BD17 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0D8DACD82286FBBA0032BD17 /* Connectable */,
+				0D8DACD72286FBA80032BD17 /* Configurator */,
 				0D8DACA22286D2AC0032BD17 /* Extension.h */,
 				0D8DACA32286D2AC0032BD17 /* Info.plist */,
-				0D8DACCD2286F7C10032BD17 /* RoutableViewController+Configurator.swift */,
-				0D8DACCF2286F7F70032BD17 /* ViewModelInjectable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -626,6 +626,22 @@
 				0D8DACD42286FAED0032BD17 /* StudioTimeTableViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D8DACD72286FBA80032BD17 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0D8DACCD2286F7C10032BD17 /* RoutableViewController+Configurator.swift */,
+				0D8DACCF2286F7F70032BD17 /* ViewModelInjectable.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		0D8DACD82286FBBA0032BD17 /* Connectable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Connectable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
