@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import Extension
+
+struct StudioTimeTableCoordinator: Coordinator {
+    
+    weak var viewController: UIViewController?
+    
+    enum Route {}
+    
+    func transition(to route: Route) {}
+}
