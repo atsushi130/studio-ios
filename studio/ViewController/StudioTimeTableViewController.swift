@@ -53,7 +53,7 @@ final class StudioTimeTableViewController: UIViewController, ViewModelInjectable
         
         self.collectionView.rx.modelSelected(StudioTimeTableSectionItem.self)
             .map { $0.item }
-            .subscribe(self.viewModel.in.selectedStudioSchedule)
+            .bind(to: self.viewModel.in.selectedStudioSchedule)
             .disposed(by: self.disposeBag)
     }
 }
