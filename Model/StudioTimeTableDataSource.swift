@@ -14,6 +14,13 @@ public enum StudioTimeTableSectionModel {
 
 public enum StudioTimeTableSectionItem {
     case item(item: StudioSchedule)
+    
+    public var item: StudioSchedule {
+        switch self {
+        case let .item(studioSchedule):
+            return studioSchedule
+        }
+    }
 }
 
 extension StudioTimeTableSectionModel: SectionModelType {
