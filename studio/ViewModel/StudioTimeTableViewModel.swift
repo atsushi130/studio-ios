@@ -42,7 +42,7 @@ final class StudioTimeTableViewModel: Connectable {
             }
         
         // sync reservations
-        StudioReservationManager.shared.refetchTodayReservations()
+        StudioReservationManager.shared.refetchTodayReservations().subscribe()
     }
 }
 
