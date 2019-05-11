@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import Model
 import Data
+import Extension
 
 public final class StudioReservationManager {
     
@@ -25,6 +26,14 @@ public final class StudioReservationManager {
             .map { reservations in
                 reservations.filter { $0.owner == true }
             }
+    }
+    
+    @discardableResult
+    public func refetchTodayReservations() -> Observable<[StudioReservation]> {
+        let today = Date()
+        return StudioApi.reservationService
+            .fetchReservations(month: today.month, day: today.day)
+            .do(onNext: self._reservations.onNext)
     }
     
     @discardableResult
