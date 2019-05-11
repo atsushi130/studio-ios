@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import RxDataSources
+
+public enum StudioTimeTableSectionModel {
+    
+}

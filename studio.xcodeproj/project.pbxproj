@@ -63,7 +63,7 @@
 		0D8DACB62286D2AC0032BD17 /* Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D8DACC12286D3BB0032BD17 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78234E227EC52B00EAE20F /* Model.framework */; };
 		0D8DACC32286D4D20032BD17 /* StudioSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC22286D4D20032BD17 /* StudioSchedule.swift */; };
-		0D8DACC52286D89B0032BD17 /* StudioTimeTableSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableSectionModel.swift */; };
+		0D8DACC52286D89B0032BD17 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
 		0D8DACC62286D8C30032BD17 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
 		0D8DACC72286D8C30032BD17 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
 		0D8DACC82286D8CE0032BD17 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
@@ -267,7 +267,7 @@
 		0D8DACAF2286D2AC0032BD17 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		0D8DACB12286D2AC0032BD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8DACC22286D4D20032BD17 /* StudioSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioSchedule.swift; sourceTree = "<group>"; };
-		0D8DACC42286D89B0032BD17 /* StudioTimeTableSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableSectionModel.swift; sourceTree = "<group>"; };
+		0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableDataSource.swift; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -482,7 +482,7 @@
 				0D782351227EC52B00EAE20F /* Info.plist */,
 				0D78239A227ECA6A00EAE20F /* StudioReservation.swift */,
 				0D8DACC22286D4D20032BD17 /* StudioSchedule.swift */,
-				0D8DACC42286D89B0032BD17 /* StudioTimeTableSectionModel.swift */,
+				0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1119,7 +1119,7 @@
 			files = (
 				0D8DACC32286D4D20032BD17 /* StudioSchedule.swift in Sources */,
 				0D78239B227ECA6A00EAE20F /* StudioReservation.swift in Sources */,
-				0D8DACC52286D89B0032BD17 /* StudioTimeTableSectionModel.swift in Sources */,
+				0D8DACC52286D89B0032BD17 /* StudioTimeTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
