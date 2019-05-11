@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+final class StudioTimeTableViewModel {
+    init() {
+    }
+}
