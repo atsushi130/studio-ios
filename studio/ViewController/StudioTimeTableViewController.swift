@@ -11,12 +11,41 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 import SwiftExtensions
+import Model
+import Extension
 
-final class StudioTimeTableViewController: UIViewController {
+extension StudioTimeTableViewController: RoutableViewController {
+    typealias ViewControllerConfigurator = StudioTimeTableConfigurator
+    typealias Dependency = Void
+}
+
+final class StudioTimeTableViewController: UIViewController, ViewModelInjectable {
  
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
+    private typealias DataSource = RxCollectionViewSectionedReloadDataSource<StudioTimeTableSectionModel>
+    private lazy var dataSource = DataSource(configureCell: { [weak self] (dataSource, tableView, indexPath, _) in
+        let item = dataSource[indexPath]
+        switch item {
+        case let .item(studioSchedule):
+            print("studio schedule")
+        }
+    })
+    
+    private let disposeBag = DisposeBag()
+    
+    private var viewModel: StudioTimeTableViewModel!
+    typealias ViewModel = StudioTimeTableViewModel
+    func inject(_ viewModel: StudioTimeTableViewModel) {
+        self.viewModel = viewModel
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.collectionView.rx.modelSelected(StudioTimeTableSectionItem.self)
+            .map { $0.item }
+            .subscribe(self.viewModel.in.selectedStudioSchedule)
+            .disposed(by: self.disposeBag)
     }
 }
