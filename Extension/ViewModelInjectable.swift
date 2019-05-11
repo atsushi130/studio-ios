@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public protocol ViewModelInjectable {
+    associatedtype ViewModel
+    func inject(_ viewModel: ViewModel)
+}
+
+public extension ViewModelInjectable where ViewModel == Void {
+    func inject(_ viewModel: ()) {}
+}
