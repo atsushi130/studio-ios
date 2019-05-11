@@ -76,6 +76,7 @@
 		0D8DACDA2286FBE70032BD17 /* Inputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACD92286FBE70032BD17 /* Inputable.swift */; };
 		0D8DACDC2286FC210032BD17 /* Outputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDB2286FC210032BD17 /* Outputable.swift */; };
 		0D8DACDE2286FC4A0032BD17 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDD2286FC4A0032BD17 /* Connectable.swift */; };
+		0D8DACE02286FD710032BD17 /* StudioTimeTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -284,6 +285,7 @@
 		0D8DACD92286FBE70032BD17 /* Inputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputable.swift; sourceTree = "<group>"; };
 		0D8DACDB2286FC210032BD17 /* Outputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outputable.swift; sourceTree = "<group>"; };
 		0D8DACDD2286FC4A0032BD17 /* Connectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
+		0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableCoordinator.swift; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -622,6 +624,7 @@
 			children = (
 				0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */,
 				0D8DACD12286FA160032BD17 /* StudioTimeTableConfigurator.swift */,
+				0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1139,6 +1142,7 @@
 			files = (
 				0D782309227EC29200EAE20F /* ViewController.swift in Sources */,
 				0D782307227EC29200EAE20F /* AppDelegate.swift in Sources */,
+				0D8DACE02286FD710032BD17 /* StudioTimeTableCoordinator.swift in Sources */,
 				0D8DACD52286FAED0032BD17 /* StudioTimeTableViewModel.swift in Sources */,
 				0D8DACD22286FA160032BD17 /* StudioTimeTableConfigurator.swift in Sources */,
 				0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */,
