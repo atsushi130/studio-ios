@@ -19,6 +19,7 @@ final class StudioTimeTableViewModel: Connectable {
     fileprivate let sectionModel: Observable<[StudioTimeTableSectionModel]>
     
     let coordinator: StudioTimeTableCoordinator
+    private let disposeBag = DisposeBag()
     
     init(coordinator: StudioTimeTableCoordinator) {
         
@@ -42,7 +43,9 @@ final class StudioTimeTableViewModel: Connectable {
             }
         
         // sync reservations
-        StudioReservationManager.shared.refetchTodayReservations().subscribe()
+        StudioReservationManager.shared.refetchTodayReservations()
+            .subscribe()
+            .disposed(by: self.disposeBag)
     }
 }
 
