@@ -71,6 +71,7 @@
 		0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */; };
 		0D8DACCE2286F7C10032BD17 /* RoutableViewController+Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCD2286F7C10032BD17 /* RoutableViewController+Configurator.swift */; };
 		0D8DACD02286F7F70032BD17 /* ViewModelInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCF2286F7F70032BD17 /* ViewModelInjectable.swift */; };
+		0D8DACD22286FA160032BD17 /* StudioTimeTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACD12286FA160032BD17 /* StudioTimeTableConfigurator.swift */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -274,6 +275,7 @@
 		0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableViewController.swift; sourceTree = "<group>"; };
 		0D8DACCD2286F7C10032BD17 /* RoutableViewController+Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutableViewController+Configurator.swift"; sourceTree = "<group>"; };
 		0D8DACCF2286F7F70032BD17 /* ViewModelInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelInjectable.swift; sourceTree = "<group>"; };
+		0D8DACD12286FA160032BD17 /* StudioTimeTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableConfigurator.swift; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -610,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */,
+				0D8DACD12286FA160032BD17 /* StudioTimeTableConfigurator.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1100,6 +1103,7 @@
 			files = (
 				0D782309227EC29200EAE20F /* ViewController.swift in Sources */,
 				0D782307227EC29200EAE20F /* AppDelegate.swift in Sources */,
+				0D8DACD22286FA160032BD17 /* StudioTimeTableConfigurator.swift in Sources */,
 				0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1839,6 +1843,7 @@
 				);
 				INFOPLIST_FILE = ViewComponent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1871,6 +1876,7 @@
 				);
 				INFOPLIST_FILE = ViewComponent/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1938,6 +1944,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Extension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1968,6 +1975,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Extension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
