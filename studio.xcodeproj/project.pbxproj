@@ -78,6 +78,7 @@
 		0D8DACDE2286FC4A0032BD17 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDD2286FC4A0032BD17 /* Connectable.swift */; };
 		0D8DACE02286FD710032BD17 /* StudioTimeTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */; };
 		0D8DACE32286FDCA0032BD17 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE22286FDCA0032BD17 /* Coordinator.swift */; };
+		0D8DACE52286FFB60032BD17 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE42286FFB60032BD17 /* Date+.swift */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -288,6 +289,7 @@
 		0D8DACDD2286FC4A0032BD17 /* Connectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
 		0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableCoordinator.swift; sourceTree = "<group>"; };
 		0D8DACE22286FDCA0032BD17 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0D8DACE42286FFB60032BD17 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -609,6 +611,7 @@
 				0D8DACD72286FBA80032BD17 /* Configurator */,
 				0D8DACA22286D2AC0032BD17 /* Extension.h */,
 				0D8DACA32286D2AC0032BD17 /* Info.plist */,
+				0D8DACE42286FFB60032BD17 /* Date+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1241,6 +1244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8DACE52286FFB60032BD17 /* Date+.swift in Sources */,
 				0D8DACDC2286FC210032BD17 /* Outputable.swift in Sources */,
 				0D8DACCE2286F7C10032BD17 /* RoutableViewController+Configurator.swift in Sources */,
 				0D8DACE32286FDCA0032BD17 /* Coordinator.swift in Sources */,
