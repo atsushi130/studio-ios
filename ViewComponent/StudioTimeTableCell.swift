@@ -6,4 +6,9 @@
 //  Copyright © 2019 Atsushi Miyake. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public final class StudioTimeTableCell: UICollectionViewCell {
+    
+    @IBOutlet public weak var startTimeLabel: UILabel!
+}
