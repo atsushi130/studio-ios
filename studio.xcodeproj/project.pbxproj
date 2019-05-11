@@ -61,6 +61,7 @@
 		0D8DACB22286D2AC0032BD17 /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8DACA22286D2AC0032BD17 /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D8DACB52286D2AC0032BD17 /* Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; };
 		0D8DACB62286D2AC0032BD17 /* Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D8DACC12286D3BB0032BD17 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78234E227EC52B00EAE20F /* Model.framework */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -352,6 +353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8DACC12286D3BB0032BD17 /* Model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
