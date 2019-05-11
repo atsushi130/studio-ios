@@ -28,7 +28,10 @@ final class StudioTimeTableViewController: UIViewController, ViewModelInjectable
         let item = dataSource[indexPath]
         switch item {
         case let .item(studioSchedule):
-            print("studio schedule")
+            print("----------")
+            print("start: \(studioSchedule.startDate)")
+            let availables = studioSchedule.availables
+            print("A: \(availables.studioA) B: \(availables.studioA) C: \(availables.studioA)")
             return UICollectionViewCell()
         }
     })
