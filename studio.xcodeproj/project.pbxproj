@@ -68,6 +68,7 @@
 		0D8DACC72286D8C30032BD17 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
 		0D8DACC82286D8CE0032BD17 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0D8DACC92286D8DA0032BD17 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
+		0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -268,6 +269,7 @@
 		0D8DACB12286D2AC0032BD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8DACC22286D4D20032BD17 /* StudioSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioSchedule.swift; sourceTree = "<group>"; };
 		0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableDataSource.swift; sourceTree = "<group>"; };
+		0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableViewController.swift; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -437,6 +439,7 @@
 		0D782305227EC29200EAE20F /* studio */ = {
 			isa = PBXGroup;
 			children = (
+				0D8DACCA2286DC960032BD17 /* ViewController */,
 				0D782306227EC29200EAE20F /* AppDelegate.swift */,
 				0D782308227EC29200EAE20F /* ViewController.swift */,
 				0D78230A227EC29200EAE20F /* Main.storyboard */,
@@ -595,6 +598,14 @@
 				0D8DACB12286D2AC0032BD17 /* Info.plist */,
 			);
 			path = ExtensionTests;
+			sourceTree = "<group>";
+		};
+		0D8DACCA2286DC960032BD17 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1082,6 +1093,7 @@
 			files = (
 				0D782309227EC29200EAE20F /* ViewController.swift in Sources */,
 				0D782307227EC29200EAE20F /* AppDelegate.swift in Sources */,
+				0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
