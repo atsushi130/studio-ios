@@ -29,6 +29,7 @@ final class StudioTimeTableViewController: UIViewController, ViewModelInjectable
         switch item {
         case let .item(studioSchedule):
             print("studio schedule")
+            return UICollectionViewCell()
         }
     })
     
@@ -42,6 +43,13 @@ final class StudioTimeTableViewController: UIViewController, ViewModelInjectable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.collectionView.rx.setDataSource(self.dataSource)
+            .disposed(by: self.disposeBag)
+        
+        self.viewModel.out.sectionModel
+            .bind(to: self.collectionView.rx.items(dataSource: self.dataSource))
+            .disposed(by: self.disposeBag)
         
         self.collectionView.rx.modelSelected(StudioTimeTableSectionItem.self)
             .map { $0.item }
