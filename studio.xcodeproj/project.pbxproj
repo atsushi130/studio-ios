@@ -49,7 +49,6 @@
 		0D7823B2227ECBC400EAE20F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0D7823B5227EDF9A00EAE20F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7823B4227EDF9A00EAE20F /* LoginService.swift */; };
 		0D8DAC762286CEE50032BD17 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
-		0D8DAC772286CEE50032BD17 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC742286CEE50032BD17 /* RxRelay.framework */; };
 		0D8DAC782286CEE50032BD17 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
 		0D8DAC872286D26C0032BD17 /* ViewComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC7E2286D26B0032BD17 /* ViewComponent.framework */; };
 		0D8DAC8E2286D26C0032BD17 /* ViewComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DAC8D2286D26C0032BD17 /* ViewComponentTests.swift */; };
@@ -63,11 +62,6 @@
 		0D8DACB62286D2AC0032BD17 /* Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D8DACC12286D3BB0032BD17 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78234E227EC52B00EAE20F /* Model.framework */; };
 		0D8DACC32286D4D20032BD17 /* StudioSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC22286D4D20032BD17 /* StudioSchedule.swift */; };
-		0D8DACC52286D89B0032BD17 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
-		0D8DACC62286D8C30032BD17 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
-		0D8DACC72286D8C30032BD17 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
-		0D8DACC82286D8CE0032BD17 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
-		0D8DACC92286D8DA0032BD17 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
 		0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCB2286DCAA0032BD17 /* StudioTimeTableViewController.swift */; };
 		0D8DACCE2286F7C10032BD17 /* RoutableViewController+Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCD2286F7C10032BD17 /* RoutableViewController+Configurator.swift */; };
 		0D8DACD02286F7F70032BD17 /* ViewModelInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACCF2286F7F70032BD17 /* ViewModelInjectable.swift */; };
@@ -79,11 +73,18 @@
 		0D8DACE02286FD710032BD17 /* StudioTimeTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */; };
 		0D8DACE32286FDCA0032BD17 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE22286FDCA0032BD17 /* Coordinator.swift */; };
 		0D8DACE52286FFB60032BD17 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE42286FFB60032BD17 /* Date+.swift */; };
+		0D8DACE8228719190032BD17 /* StudioTimeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
 		0DE861FA228014E400046DDB /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78234E227EC52B00EAE20F /* Model.framework */; };
 		0DE861FB228014E700046DDB /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78232B227EC4F200EAE20F /* Data.framework */; };
+		0DFF160D22871E630011D035 /* Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; };
+		0DFF160E22871E960011D035 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
+		0DFF160F22871EDA0011D035 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
+		0DFF161022871EDA0011D035 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
+		0DFF161222871F100011D035 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
+		0DFF161322871F100011D035 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,7 +264,6 @@
 		0D7823A3227ECBB600EAE20F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		0D7823B4227EDF9A00EAE20F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		0D8DAC732286CEE50032BD17 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
-		0D8DAC742286CEE50032BD17 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		0D8DAC752286CEE50032BD17 /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		0D8DAC7E2286D26B0032BD17 /* ViewComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8DAC802286D26B0032BD17 /* ViewComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewComponent.h; sourceTree = "<group>"; };
@@ -290,6 +290,7 @@
 		0D8DACDF2286FD710032BD17 /* StudioTimeTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableCoordinator.swift; sourceTree = "<group>"; };
 		0D8DACE22286FDCA0032BD17 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0D8DACE42286FFB60032BD17 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudioTimeTableViewController.storyboard; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,7 +310,6 @@
 				0D8DAC782286CEE50032BD17 /* Differentiator.framework in Frameworks */,
 				0D7823A9227ECBB600EAE20F /* RxMoya.framework in Frameworks */,
 				0D782387227EC54300EAE20F /* Shared.framework in Frameworks */,
-				0D8DAC772286CEE50032BD17 /* RxRelay.framework in Frameworks */,
 				0D7823A6227ECBB600EAE20F /* Moya.framework in Frameworks */,
 				0D7823AA227ECBB600EAE20F /* RxCocoa.framework in Frameworks */,
 				0D782340227EC4F300EAE20F /* Data.framework in Frameworks */,
@@ -349,10 +349,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8DACC62286D8C30032BD17 /* Differentiator.framework in Frameworks */,
-				0D8DACC72286D8C30032BD17 /* RxDataSources.framework in Frameworks */,
-				0D8DACC92286D8DA0032BD17 /* RxCocoa.framework in Frameworks */,
-				0D8DACC82286D8CE0032BD17 /* RxSwift.framework in Frameworks */,
+				0DFF160D22871E630011D035 /* Extension.framework in Frameworks */,
+				0DFF160F22871EDA0011D035 /* Differentiator.framework in Frameworks */,
+				0DFF161022871EDA0011D035 /* RxDataSources.framework in Frameworks */,
+				0DFF161222871F100011D035 /* RxCocoa.framework in Frameworks */,
+				0DFF161322871F100011D035 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +460,7 @@
 		0D782305227EC29200EAE20F /* studio */ = {
 			isa = PBXGroup;
 			children = (
+				0D8DACE6228718FB0032BD17 /* Storyboard */,
 				0D8DACD32286FA610032BD17 /* ViewModel */,
 				0D8DACCA2286DC960032BD17 /* ViewController */,
 				0D782306227EC29200EAE20F /* AppDelegate.swift */,
@@ -525,7 +527,6 @@
 			children = (
 				0D8DAC752286CEE50032BD17 /* Differentiator.framework */,
 				0D8DAC732286CEE50032BD17 /* RxDataSources.framework */,
-				0D8DAC742286CEE50032BD17 /* RxRelay.framework */,
 				0D78239E227ECBB600EAE20F /* Moya.framework */,
 				0D7823A3227ECBB600EAE20F /* Result.framework */,
 				0D78239C227ECBB600EAE20F /* RxAtomic.framework */,
@@ -668,6 +669,14 @@
 				0D8DACE22286FDCA0032BD17 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0D8DACE6228718FB0032BD17 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1036,6 +1045,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D782311227EC29400EAE20F /* LaunchScreen.storyboard in Resources */,
+				0D8DACE8228719190032BD17 /* StudioTimeTableViewController.storyboard in Resources */,
 				0D78230E227EC29400EAE20F /* Assets.xcassets in Resources */,
 				0D78230C227EC29200EAE20F /* Main.storyboard in Resources */,
 			);
@@ -1137,6 +1147,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftExtensions.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
 			);
 			name = "copy-frameworks";
 			outputFileListPaths = (
@@ -1160,6 +1172,7 @@
 				0D8DACD52286FAED0032BD17 /* StudioTimeTableViewModel.swift in Sources */,
 				0D8DACD22286FA160032BD17 /* StudioTimeTableConfigurator.swift in Sources */,
 				0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */,
+				0DFF160E22871E960011D035 /* StudioTimeTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,7 +1210,6 @@
 			files = (
 				0D8DACC32286D4D20032BD17 /* StudioSchedule.swift in Sources */,
 				0D78239B227ECA6A00EAE20F /* StudioReservation.swift in Sources */,
-				0D8DACC52286D89B0032BD17 /* StudioTimeTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
