@@ -80,11 +80,12 @@
 		0DE861FA228014E400046DDB /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78234E227EC52B00EAE20F /* Model.framework */; };
 		0DE861FB228014E700046DDB /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78232B227EC4F200EAE20F /* Data.framework */; };
 		0DFF160D22871E630011D035 /* Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; };
-		0DFF160E22871E960011D035 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
 		0DFF160F22871EDA0011D035 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; };
 		0DFF161022871EDA0011D035 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; };
 		0DFF161222871F100011D035 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
 		0DFF161322871F100011D035 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
+		0DFF1615228721AB0011D035 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */; };
+		0DFF1616228721B80011D035 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +293,7 @@
 		0D8DACE42286FFB60032BD17 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudioTimeTableViewController.storyboard; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
+		0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +471,7 @@
 				0D78230D227EC29400EAE20F /* Assets.xcassets */,
 				0D78230F227EC29400EAE20F /* LaunchScreen.storyboard */,
 				0D782312227EC29400EAE20F /* Info.plist */,
+				0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */,
 			);
 			path = studio;
 			sourceTree = "<group>";
@@ -1172,7 +1175,7 @@
 				0D8DACD52286FAED0032BD17 /* StudioTimeTableViewModel.swift in Sources */,
 				0D8DACD22286FA160032BD17 /* StudioTimeTableConfigurator.swift in Sources */,
 				0D8DACCC2286DCAA0032BD17 /* StudioTimeTableViewController.swift in Sources */,
-				0DFF160E22871E960011D035 /* StudioTimeTableDataSource.swift in Sources */,
+				0DFF1615228721AB0011D035 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1209,6 +1212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8DACC32286D4D20032BD17 /* StudioSchedule.swift in Sources */,
+				0DFF1616228721B80011D035 /* StudioTimeTableDataSource.swift in Sources */,
 				0D78239B227ECA6A00EAE20F /* StudioReservation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
