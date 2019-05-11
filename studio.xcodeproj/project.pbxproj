@@ -86,6 +86,8 @@
 		0DFF161322871F100011D035 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DFF1615228721AB0011D035 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */; };
 		0DFF1616228721B80011D035 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
+		0DFF1618228729550011D035 /* StudioTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF1617228729550011D035 /* StudioTimeTableCell.swift */; };
+		0DFF161A228729880011D035 /* StudioTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFF1619228729880011D035 /* StudioTimeTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +296,8 @@
 		0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudioTimeTableViewController.storyboard; sourceTree = "<group>"; };
 		0DE861F62280149100046DDB /* StudioReservationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioReservationManager.swift; sourceTree = "<group>"; };
 		0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		0DFF1617228729550011D035 /* StudioTimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableCell.swift; sourceTree = "<group>"; };
+		0DFF1619228729880011D035 /* StudioTimeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudioTimeTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -594,6 +598,8 @@
 			children = (
 				0D8DAC802286D26B0032BD17 /* ViewComponent.h */,
 				0D8DAC812286D26B0032BD17 /* Info.plist */,
+				0DFF1617228729550011D035 /* StudioTimeTableCell.swift */,
+				0DFF1619228729880011D035 /* StudioTimeTableCell.xib */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -998,6 +1004,7 @@
 					};
 					0D8DAC7D2286D26B0032BD17 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					0D8DAC852286D26B0032BD17 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1107,6 +1114,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFF161A228729880011D035 /* StudioTimeTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFF1618228729550011D035 /* StudioTimeTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,6 +1914,7 @@
 		0D8DAC962286D26C0032BD17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1928,6 +1938,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.ViewComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1938,6 +1949,7 @@
 		0D8DAC972286D26C0032BD17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
