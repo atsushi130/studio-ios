@@ -25,6 +25,15 @@ public struct StudioSchedule {
         self.availables = availables
         self.available = availables.studioA || availables.studioB || availables.studioC
     }
+    
+    public static func unavailableSchedule(startDate: Date) -> StudioSchedule {
+        let availables = StudioAvailables(studioA: false, studioB: false, studioC: false)
+        return StudioSchedule(startDate: startDate, availables: availables)
+    }
+    
+    var isOverNow: Bool {
+        return self.startDate <= Date()
+    }
 }
 
 public final class StudioScheduleFactory {
@@ -32,30 +41,23 @@ public final class StudioScheduleFactory {
     public static let shared = StudioScheduleFactory()
     private init() {}
     
-    public static func make(timeTable: StudioTimeTable, groupedReservations: [String: [StudioReservation]]) -> StudioSchedule {
+    public static func make(timeTable: StudioTimeTable, groupedReservations: [String: [StudioReservation]]) -> StudioSchedule? {
+        
         let today = Date()
-        let year = NSString(format: "%04d", today.year)
-        let month = NSString(format: "%04d", today.month)
-        let day = NSString(format: "%04d", today.day)
-        let yyyyMMdd = "\(today.year)/\(today.month)/\(today.day)"
-        let todayString = "\(year)/\(month)/\(day) \(timeTable.rawValue):00"
-        let startDate = DateFormatter.from(locale: .current, format: "yyyy/MM/dd HH:mm:ss").date(from: todayString)!
-        typealias Availables = StudioSchedule.StudioAvailables
-        // today reservation and matched time table
-        let reserved = groupedReservations.keys.contains {
-            return $0.contains(timeTable.rawValue) && $0.contains(yyyyMMdd)
-        }
-        if reserved {
-            let key = "\(yyyyMMdd)++\(timeTable.rawValue)"
-            let reservations = groupedReservations[key]!.map { $0.studioType }
-            let availables = Availables(studioA: !reservations.contains(.studioA),
-                                        studioB: !reservations.contains(.studioB),
-                                        studioC: !reservations.contains(.studioC))
-            return StudioSchedule(startDate: startDate, availables: availables)
-        } else {
-            let availables = Availables(studioA: true, studioB: true, studioC: true)
-            return StudioSchedule(startDate: startDate, availables: availables)
-        }
+        let key = "\(today.year)/\(today.month)/\(today.day)++\(timeTable.rawValue)"
+        let reservations = groupedReservations[key]?.map { $0.studioType } ?? []
+        let availables = StudioSchedule.StudioAvailables(studioA: !reservations.contains(.studioA),
+                                                         studioB: !reservations.contains(.studioB),
+                                                         studioC: !reservations.contains(.studioC))
+        let startDate = timeTable.today
+        let studioSchedule = StudioSchedule(startDate: startDate, availables: availables)
+        return studioSchedule.isOverNow ? nil : studioSchedule
+    }
+    
+    private static func isOverNow(studioSchedule: StudioSchedule) -> Bool {
+        let now = Date()
+        let startDate = studioSchedule.startDate
+        return startDate <= now
     }
 }
 
@@ -108,4 +110,13 @@ public enum StudioTimeTable: String, CaseIterable {
     case pm1030 = "22:30"
     case pm1100 = "23:0"
     case pm1130 = "23:30"
+    
+    public var today: Date {
+        let today = Date()
+        let year = NSString(format: "%04d", today.year)
+        let month = NSString(format: "%04d", today.month)
+        let day = NSString(format: "%04d", today.day)
+        let todayString = "\(year)/\(month)/\(day) \(self.rawValue):00"
+        return DateFormatter.from(locale: .current, format: "yyyy/MM/dd HH:mm:ss").date(from: todayString)!
+    }
 }
