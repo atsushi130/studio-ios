@@ -12,11 +12,13 @@ import RxCocoa
 import Model
 import Extension
 import Shared
+import Data
 
 final class StudioTimeTableViewModel: Connectable {
     
     fileprivate let selectedStudioSchedule = PublishSubject<StudioSchedule>()
     fileprivate let sectionModel: Observable<[StudioTimeTableSectionModel]>
+    fileprivate let reservedStudio: Observable<Void>
     
     let coordinator: StudioTimeTableCoordinator
     private let disposeBag = DisposeBag()
@@ -31,7 +33,7 @@ final class StudioTimeTableViewModel: Connectable {
             }
             .map { groupedReservations in
                 StudioTimeTable.allCases
-                    .map { timeTable -> StudioSchedule in
+                    .compactMap { timeTable -> StudioSchedule? in
                         StudioScheduleFactory.make(timeTable: timeTable, groupedReservations: groupedReservations)
                     }
                     .map { studioSchedule -> StudioTimeTableSectionItem in
@@ -42,6 +44,12 @@ final class StudioTimeTableViewModel: Connectable {
                 [.section(items: items)]
             }
         
+        self.reservedStudio = self.selectedStudioSchedule
+            .map { studioSchedule in
+                StudioReservation(startDate: studioSchedule.startDate, studioType: .studioC)!
+            }
+            .flatMap(StudioApi.reservationService.reserve)
+
         // sync reservations
         StudioReservationManager.shared.refetchTodayReservations()
             .subscribe()
@@ -55,4 +63,5 @@ extension InputSpace where Definer: StudioTimeTableViewModel {
 
 extension OutputSpace where Definer: StudioTimeTableViewModel {
     var sectionModel: Observable<[StudioTimeTableSectionModel]> { return self.definer.sectionModel }
+    var reservedStudio: Observable<Void> { return self.definer.reservedStudio }
 }
