@@ -74,6 +74,17 @@
 		0D8DACE32286FDCA0032BD17 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE22286FDCA0032BD17 /* Coordinator.swift */; };
 		0D8DACE52286FFB60032BD17 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACE42286FFB60032BD17 /* Date+.swift */; };
 		0D8DACE8228719190032BD17 /* StudioTimeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DACE7228719190032BD17 /* StudioTimeTableViewController.storyboard */; };
+		0DBF934A2287BF3A00A9BEA8 /* Differentiator.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D8DAC752286CEE50032BD17 /* Differentiator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF934B2287BF3A00A9BEA8 /* RxDataSources.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D8DAC732286CEE50032BD17 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF934C2287BF3A00A9BEA8 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D78239E227ECBB600EAE20F /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF934D2287BF3A00A9BEA8 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7823A3227ECBB600EAE20F /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF934E2287BF3A00A9BEA8 /* RxAtomic.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D78239C227ECBB600EAE20F /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF934F2287BF3A00A9BEA8 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7823A0227ECBB600EAE20F /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF93502287BF3A00A9BEA8 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF93512287BF3A00A9BEA8 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D7823A1227ECBB600EAE20F /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF93522287BF3A00A9BEA8 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF93532287BF3A00A9BEA8 /* SwiftExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D78239D227ECBB600EAE20F /* SwiftExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0DBF93542287C8C100A9BEA8 /* Extension.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D8DACA02286D2AC0032BD17 /* Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DE861F72280149100046DDB /* StudioReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE861F62280149100046DDB /* StudioReservationManager.swift */; };
 		0DE861F8228014B800046DDB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239F227ECBB600EAE20F /* RxSwift.framework */; };
 		0DE861F9228014BC00046DDB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7823A2227ECBB600EAE20F /* RxCocoa.framework */; };
@@ -88,6 +99,10 @@
 		0DFF1616228721B80011D035 /* StudioTimeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DACC42286D89B0032BD17 /* StudioTimeTableDataSource.swift */; };
 		0DFF1618228729550011D035 /* StudioTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF1617228729550011D035 /* StudioTimeTableCell.swift */; };
 		0DFF161A228729880011D035 /* StudioTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFF1619228729880011D035 /* StudioTimeTableCell.xib */; };
+		0DFF161C2287B2A50011D035 /* CircleLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFF161B2287B2A50011D035 /* CircleLabelView.xib */; };
+		0DFF161E2287B2B40011D035 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF161D2287B2B40011D035 /* CircleLabelView.swift */; };
+		0DFF16202287BA320011D035 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF161F2287BA320011D035 /* NibDesignable.swift */; };
+		0DFF16222287BD320011D035 /* SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239D227ECBB600EAE20F /* SwiftExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +236,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DBF93492287BF2C00A9BEA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0DBF93542287C8C100A9BEA8 /* Extension.framework in CopyFiles */,
+				0DBF934A2287BF3A00A9BEA8 /* Differentiator.framework in CopyFiles */,
+				0DBF934B2287BF3A00A9BEA8 /* RxDataSources.framework in CopyFiles */,
+				0DBF934C2287BF3A00A9BEA8 /* Moya.framework in CopyFiles */,
+				0DBF934D2287BF3A00A9BEA8 /* Result.framework in CopyFiles */,
+				0DBF934E2287BF3A00A9BEA8 /* RxAtomic.framework in CopyFiles */,
+				0DBF934F2287BF3A00A9BEA8 /* RxBlocking.framework in CopyFiles */,
+				0DBF93502287BF3A00A9BEA8 /* RxCocoa.framework in CopyFiles */,
+				0DBF93512287BF3A00A9BEA8 /* RxMoya.framework in CopyFiles */,
+				0DBF93522287BF3A00A9BEA8 /* RxSwift.framework in CopyFiles */,
+				0DBF93532287BF3A00A9BEA8 /* SwiftExtensions.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -298,6 +333,9 @@
 		0DFF1614228721AB0011D035 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		0DFF1617228729550011D035 /* StudioTimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTimeTableCell.swift; sourceTree = "<group>"; };
 		0DFF1619228729880011D035 /* StudioTimeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudioTimeTableCell.xib; sourceTree = "<group>"; };
+		0DFF161B2287B2A50011D035 /* CircleLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleLabelView.xib; sourceTree = "<group>"; };
+		0DFF161D2287B2B40011D035 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
+		0DFF161F2287BA320011D035 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8DACC12286D3BB0032BD17 /* Model.framework in Frameworks */,
+				0DFF16222287BD320011D035 /* SwiftExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +639,9 @@
 				0D8DAC812286D26B0032BD17 /* Info.plist */,
 				0DFF1617228729550011D035 /* StudioTimeTableCell.swift */,
 				0DFF1619228729880011D035 /* StudioTimeTableCell.xib */,
+				0DFF161B2287B2A50011D035 /* CircleLabelView.xib */,
+				0DFF161D2287B2B40011D035 /* CircleLabelView.swift */,
+				0DFF161F2287BA320011D035 /* NibDesignable.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -895,6 +937,7 @@
 				0D8DAC7A2286D26B0032BD17 /* Sources */,
 				0D8DAC7B2286D26B0032BD17 /* Frameworks */,
 				0D8DAC7C2286D26B0032BD17 /* Resources */,
+				0DBF93492287BF2C00A9BEA8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1115,6 +1158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DFF161A228729880011D035 /* StudioTimeTableCell.xib in Resources */,
+				0DFF161C2287B2A50011D035 /* CircleLabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1254,6 +1298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DFF1618228729550011D035 /* StudioTimeTableCell.swift in Sources */,
+				0DFF16202287BA320011D035 /* NibDesignable.swift in Sources */,
+				0DFF161E2287B2B40011D035 /* CircleLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1524,6 +1570,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1548,6 +1595,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.studio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1934,6 +1982,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.ViewComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1969,6 +2018,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.ViewComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
