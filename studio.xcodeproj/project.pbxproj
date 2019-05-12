@@ -101,7 +101,6 @@
 		0DFF161A228729880011D035 /* StudioTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFF1619228729880011D035 /* StudioTimeTableCell.xib */; };
 		0DFF161C2287B2A50011D035 /* CircleLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFF161B2287B2A50011D035 /* CircleLabelView.xib */; };
 		0DFF161E2287B2B40011D035 /* CircleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF161D2287B2B40011D035 /* CircleLabelView.swift */; };
-		0DFF16202287BA320011D035 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF161F2287BA320011D035 /* NibDesignable.swift */; };
 		0DFF16222287BD320011D035 /* SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D78239D227ECBB600EAE20F /* SwiftExtensions.framework */; };
 /* End PBXBuildFile section */
 
@@ -335,7 +334,6 @@
 		0DFF1619228729880011D035 /* StudioTimeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudioTimeTableCell.xib; sourceTree = "<group>"; };
 		0DFF161B2287B2A50011D035 /* CircleLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleLabelView.xib; sourceTree = "<group>"; };
 		0DFF161D2287B2B40011D035 /* CircleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabelView.swift; sourceTree = "<group>"; };
-		0DFF161F2287BA320011D035 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -641,7 +639,6 @@
 				0DFF1619228729880011D035 /* StudioTimeTableCell.xib */,
 				0DFF161B2287B2A50011D035 /* CircleLabelView.xib */,
 				0DFF161D2287B2B40011D035 /* CircleLabelView.swift */,
-				0DFF161F2287BA320011D035 /* NibDesignable.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -1298,7 +1295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DFF1618228729550011D035 /* StudioTimeTableCell.swift in Sources */,
-				0DFF16202287BA320011D035 /* NibDesignable.swift in Sources */,
 				0DFF161E2287B2B40011D035 /* CircleLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
